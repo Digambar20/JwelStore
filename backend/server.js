@@ -14,7 +14,15 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: (origin, callback) => {
+    const allowed = process.env.FRONTEND_URL || "http://localhost:5173";
+    const allowedClean = allowed.replace(/\/$/, "");
+    if (!origin || origin.replace(/\/$/, "") === allowedClean || origin.includes("jwelstore")) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
 }));
 app.use(express.json({ limit: "5mb" }));
