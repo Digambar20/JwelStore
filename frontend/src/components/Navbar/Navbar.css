@@ -1,0 +1,480 @@
+/* =====================================================
+   JWELSTORE NAVBAR
+===================================================== */
+
+:root {
+  --jwel-green: #54C69D;
+  --jwel-black: #000000;
+  --jwel-white: #ffffff;
+}
+
+
+/* =====================================================
+   MAIN NAVBAR
+===================================================== */
+
+.jwel-navbar {
+  width: 100%;
+  background: #54C69D;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1050;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.jwel-navbar-container {
+  width: 100%;
+  max-width: 1500px;
+
+  height: 82px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 45px;
+}
+
+
+/* =====================================================
+   LEFT
+===================================================== */
+
+.jwel-left {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.jwel-logo {
+  text-decoration: none;
+
+  color: var(--jwel-white);
+
+  font-size: 31px;
+
+  font-weight: 900;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 0.75;
+
+  letter-spacing: -2px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.2s ease;
+}
+
+.jwel-logo span:first-child {
+  color: var(--jwel-white);
+}
+
+.jwel-logo span:last-child {
+  color: var(--jwel-white);
+}
+
+.jwel-logo:hover {
+  color: var(--jwel-white);
+}
+
+
+/* =====================================================
+   MOBILE MENU BUTTON
+===================================================== */
+
+.jwel-menu-btn {
+  display: none;
+
+  background: transparent;
+
+  border: none;
+
+  color: var(--jwel-white);
+
+  font-size: 22px;
+
+  padding: 0;
+
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   SEARCH BAR
+===================================================== */
+
+.jwel-search {
+  background: var(--jwel-white);
+
+  height: 48px;
+
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+
+  border: 2px solid transparent;
+
+  overflow: hidden;
+
+  transition: 0.2s ease;
+}
+
+.jwel-search:focus-within {
+  border-color: var(--jwel-green);
+
+  box-shadow: 0 0 0 2px rgba(128, 237, 153, 0.15);
+}
+
+.jwel-search svg {
+  color: #111;
+
+  font-size: 17px;
+
+  margin-left: 17px;
+
+  flex-shrink: 0;
+}
+
+.jwel-search input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  padding: 0 15px;
+
+  font-size: 15px;
+
+  color: #111;
+}
+
+.jwel-search input::placeholder {
+  color: #666;
+}
+
+
+/* =====================================================
+   DESKTOP SEARCH
+===================================================== */
+
+.jwel-desktop-search {
+  flex: 1;
+
+  max-width: 950px;
+
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   RIGHT ICONS
+===================================================== */
+
+.jwel-right {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  flex-shrink: 0;
+}
+
+.jwel-icon {
+  color: var(--jwel-white);
+
+  text-decoration: none;
+
+  font-size: 27px;
+
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+  position: relative;
+
+  transition: all 0.2s ease;
+}
+
+.jwel-icon:hover {
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   CART
+===================================================== */
+
+.jwel-cart {
+  font-size: 29px;
+}
+
+.jwel-cart-count {
+  position: absolute;
+
+  top: -9px;
+  right: -10px;
+
+  width: 19px;
+  height: 19px;
+
+  background: var(--jwel-green);
+
+  color: var(--jwel-black);
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   MOBILE SEARCH
+===================================================== */
+
+.jwel-mobile-search-wrapper {
+  display: none;
+}
+
+
+/* =====================================================
+   MOBILE OFFCANVAS
+===================================================== */
+
+.jwel-offcanvas {
+  background: var(--jwel-black);
+
+  color: var(--jwel-white);
+
+  width: 280px !important;
+}
+
+.jwel-offcanvas .offcanvas-header {
+  border-bottom: 1px solid #222;
+
+  padding: 20px;
+}
+
+.jwel-sidebar-logo {
+  text-decoration: none;
+
+  color: var(--jwel-white);
+
+  font-size: 25px;
+
+  font-weight: 900;
+}
+
+.jwel-sidebar-logo::first-letter {
+  color: var(--jwel-green);
+}
+
+.jwel-close-btn {
+  border: none;
+
+  background: transparent;
+
+  color: var(--jwel-white);
+
+  font-size: 20px;
+}
+
+.jwel-sidebar-link {
+  display: block;
+
+  color: var(--jwel-white);
+
+  text-decoration: none;
+
+  padding: 14px 10px;
+
+  border-bottom: 1px solid #222;
+
+  font-size: 16px;
+
+  transition: 0.2s ease;
+}
+
+.jwel-sidebar-link:hover {
+  color: var(--jwel-green);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .jwel-navbar-container {
+    gap: 25px;
+  }
+
+  .jwel-right {
+    gap: 18px;
+  }
+
+  .jwel-desktop-search {
+    max-width: 650px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 991px) {
+
+  /* Main row */
+
+  .jwel-navbar-container {
+    height: 48px;
+
+    padding: 0 9px;
+
+    gap: 0;
+
+    justify-content: space-between;
+  }
+
+
+  /* Hamburger */
+
+  .jwel-menu-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+
+  /* Logo */
+
+  .jwel-logo {
+    font-size: 23px;
+
+    letter-spacing: -0.5px;
+
+    margin-left: 15px;
+  }
+
+
+  /* Hide desktop search */
+
+  .jwel-desktop-search {
+    display: none;
+  }
+
+
+  /* Right icons */
+
+  .jwel-right {
+    gap: 30px;
+
+    margin-left: auto;
+  }
+
+  .jwel-icon {
+    font-size: 24px;
+  }
+
+  .jwel-cart {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .jwel-cart-count {
+    width: 14px;
+    height: 14px;
+
+    font-size: 8px;
+
+    top: -5px;
+    right: -6px;
+  }
+
+
+  /* Mobile search */
+
+  .jwel-mobile-search-wrapper {
+    display: block;
+
+    padding: 3px 17px 7px;
+  }
+
+  .jwel-mobile-search {
+    width: 100%;
+
+    height: 35px;
+
+    border-radius: 3px;
+  }
+
+  .jwel-mobile-search svg {
+    font-size: 20px;
+    opacity: 0.7;
+
+    margin-left: 9px;
+  }
+
+  .jwel-mobile-search input {
+    font-size: 15px;
+
+    padding: 0 12px;
+    opacity: 0.6;
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+
+  .jwel-right {
+    gap: 9px;
+  }
+
+  .jwel-logo {
+    font-size: 17px;
+  }
+
+  .jwel-menu-btn {
+    margin-right: 8px;
+  }
+
+}
