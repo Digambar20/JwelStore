@@ -275,4 +275,4 @@ When admin marks an order as **Completed**, the user automatically receives an e
 
 ## 📄 License
 
-MIT License © 2024 Digambar Khekade
+MIT License © 2026 Digambar Khekade
