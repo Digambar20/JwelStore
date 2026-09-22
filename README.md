@@ -242,13 +242,17 @@ When admin marks an order as **Completed**, the user automatically receives an e
    - `NODE_ENV=production`
    - `EMAIL_USER`
    - `EMAIL_PASS`
-   - `FRONTEND_URL=https://your-frontend.vercel.app`
+   - `FRONTEND_URL=https://jwelstore-bydk.vercel.app`
+
+**Live:** https://jwelstore-backend.vercel.app
 
 ### Frontend Deployment
 
 1. Import repo on Vercel → set Root Directory to `frontend`
 2. Add environment variable:
-   - `VITE_API_BASE_URL=https://your-backend.vercel.app/api`
+   - `VITE_API_BASE_URL=https://jwelstore-backend.vercel.app/api`
+
+**Live:** https://jwelstore-bydk.vercel.app
 
 ---
 
@@ -267,9 +271,9 @@ When admin marks an order as **Completed**, the user automatically receives an e
 
 1. ✅ Backend structure created
 2. ✅ Frontend folder structure ready
-3. ⬜ Create pages and components
-4. ⬜ Connect frontend to backend API
-5. ⬜ Deploy to Vercel
+3. ✅ Create pages and components
+4. ✅ Connect frontend to backend API
+5. ✅ Deploy to Vercel
 
 ---
 
