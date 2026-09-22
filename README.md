@@ -4,8 +4,8 @@ A full-stack MERN application for an online jewelry store with user authenticati
 
 ## 🌐 Live Demo
 
-- **Frontend**: https://your-frontend.vercel.app
-- **Backend**: https://your-backend.vercel.app
+- **Frontend**: https://jwelstore-bydk.vercel.app
+- **Backend**: https://jwelstore-backend.vercel.app
 
 ---
 
