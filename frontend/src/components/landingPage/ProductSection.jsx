@@ -28,7 +28,7 @@ const ProductSection = () => {
       }
     };
 
-    const refreshInterval = window.setInterval(fetchProducts, 30000);
+    const refreshInterval = window.setInterval(fetchProducts, 300000);
     window.addEventListener("focus", refreshWhenVisible);
     document.addEventListener("visibilitychange", refreshWhenVisible);
 
